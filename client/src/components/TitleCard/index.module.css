@@ -1,0 +1,38 @@
+.root {
+  background-color: var(--background);
+  box-shadow: var(--shadow) !important;
+  border-radius: 6px;
+}
+
+.container {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  padding-bottom: 16px;
+}
+
+.title > :last-child {
+  margin-left: auto;
+}
+
+.title::before {
+  content: '';
+  position: relative;
+  display: inline-block;
+  width: 16px;
+  height: 32px;
+  background-color: var(--primary);
+  margin-right: 16px;
+  border-radius: 6px;
+}
+
+.content {
+  position: relative;
+  flex-grow: 1;
+}

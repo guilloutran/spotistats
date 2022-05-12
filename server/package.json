@@ -1,0 +1,51 @@
+{
+  "name": "server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node lib/bin/www",
+    "start:watch": "nodemon lib/bin/www",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "dev": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"cyan.bold,green.bold\" \"yarn build:watch\" \"yarn start:watch\"",
+    "migrate": "node ./lib/migrations.js",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "axios": "0.27.2",
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "debug": "^4.3.1",
+    "express": "4.18.1",
+    "joi": "^17.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "migrate": "^1.7.0",
+    "mongoose": "6.3.2",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.4",
+    "uuid": "^8.3.2",
+    "zod": "3.15.1"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/bcrypt": "^5.0.0",
+    "@types/cookie-parser": "^1.4.2",
+    "@types/jsonwebtoken": "^8.5.8",
+    "@types/morgan": "^1.9.3",
+    "@types/multer": "^1.4.7",
+    "@types/node": "17.0.31",
+    "@types/uuid": "^8.3.4",
+    "@typescript-eslint/eslint-plugin": "5.22.0",
+    "@typescript-eslint/parser": "5.22.0",
+    "concurrently": "^7.0.0",
+    "eslint": "8.14.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "17.0.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.1",
+    "typescript": "4.6.4"
+  }
+}

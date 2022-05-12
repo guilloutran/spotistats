@@ -1,0 +1,29 @@
+.root {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  margin-bottom: 32px;
+  font-size: 4em;
+}
+
+.welcome {
+  margin-bottom: 8px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  background-color: #1BD760;
+  color: white;
+  height: 40px;
+  border-radius: 20px;
+  padding: 0px 24px;
+  font-weight: bold;
+}
